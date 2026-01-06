@@ -1,0 +1,29 @@
+{
+  "name": "dailybreadfit",
+  "version": "1.0.0",
+  "description": "A web application that provides users with daily fit related tips and AI-recommended nutritious meals",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "infrastructure"
+  ],
+  "scripts": {
+    "install:all": "npm install && cd frontend && npm install && cd ../infrastructure && npm install",
+    "dev:frontend": "cd frontend && npm start",
+    "build:frontend": "cd frontend && npm run build",
+    "deploy:infrastructure": "cd infrastructure && cdk deploy",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces"
+  },
+  "keywords": [
+    "health",
+    "fitness",
+    "nutrition",
+    "meal-planning",
+    "aws",
+    "react",
+    "python"
+  ],
+  "author": "",
+  "license": "MIT"
+}
